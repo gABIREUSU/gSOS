@@ -1,0 +1,23 @@
+<main [ngClass]="layoutClass">
+    <section class="conta-section" [ngClass]="headerClass">
+        <h2>{{ title }}</h2>
+
+        <div class="alinha-img">
+            <img src="assets/svg/UserIcon.svg" width="175" />
+            <p>User</p>
+
+            <button class="botao-inativo">
+                {{ PrimaryBtnText }}
+            </button>
+
+            <button routerLink="/conta" class="botao-ativo">
+                {{ SecondBtnText }}
+            </button>
+        </div>
+    </section>
+
+    <section class="main-section" [ngClass]="mainClass">
+        <h1>{{ title2 }}</h1>
+        <ng-content></ng-content>
+    </section>
+</main>
