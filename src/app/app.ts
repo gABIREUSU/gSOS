@@ -1,8 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
-
-
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
@@ -11,4 +9,5 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('GSOS')
+  
 }

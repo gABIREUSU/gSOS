@@ -1,0 +1,24 @@
+<main>
+    <section class="login-wrapper">
+
+        <!-- Título centralizado acima do card -->
+        <h1 class="logo">
+            S.<span>OS</span>
+        </h1>
+
+        <!-- Card do login -->
+        <div class="login-section">
+            <h2>{{title}}</h2>
+
+            <ng-content></ng-content>
+
+            <div class="checkbox-area">
+                <input type="checkbox">
+                <label>{{checkbox}}</label>
+            </div>
+            <button (click)="submit.emit()">{{ buttonSubmit }}</button>
+
+        </div>
+
+    </section>
+</main>

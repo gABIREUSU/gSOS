@@ -1,0 +1,12 @@
+<div class="input-wrapper">
+    <label [for]="inputName">{{ label }}</label>
+
+    <input 
+        [id]="inputName"
+        [name]="inputName"
+        [type]="type"
+        [value]="value"
+        (input)="onInput($event)"
+        (blur)="onTouched()"
+    >
+</div>

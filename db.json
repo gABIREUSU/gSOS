@@ -1,1 +1,77 @@
-{}
+{
+  "pc": [
+    {
+      "idpc": 1,
+      "marca": "Acer",
+      "modelo": "Nitro",
+      "idconta": 1,
+      "id": "bc5d"
+    },
+    {
+      "idpc": 2,
+      "marca": "Dell",
+      "modelo": "XPS 13",
+      "idconta": 1,
+      "id": "de26"
+    },
+    {
+      "idpc": 3,
+      "marca": "Lenovo",
+      "modelo": "IdeaPad 5",
+      "idconta": 1,
+      "id": "634b"
+    }
+  ],
+  "os": [
+    {
+      "idos": 1,
+      "idpc": 1,
+      "preco": 100,
+      "descricao": "Formatação e reinstalação do sistema operacional.",
+      "status": "Concluída",
+      "data": "01/01/2025",
+      "id": "beee"
+    },
+    {
+      "idos": 2,
+      "idpc": 2,
+      "preco": 450.5,
+      "descricao": "Troca de tela LCD danificada.",
+      "status": "Em Andamento",
+      "data": "15/01/2025",
+      "id": "d11a"
+    },
+    {
+      "idos": 3,
+      "idpc": 3,
+      "preco": 75,
+      "descricao": "Limpeza interna e troca de pasta térmica.",
+      "status": "Pendente",
+      "data": "20/01/2025",
+      "id": "3468"
+    }
+  ],
+  "contas": [
+    {
+      "idconta": 1,
+      "login": "scrubsnelson",
+      "senha": "1234senhaforte",
+      "nivelacesso": 1,
+      "id": "fa2a"
+    },
+    {
+      "idconta": 2,
+      "login": "admin",
+      "senha": "admin",
+      "nivelacesso": 2,
+      "id": "2a5a"
+    },
+    {
+      "id": "dde4",
+      "login": "Chris",
+      "senha": "40028922",
+      "nivelacesso": 1,
+      "idconta": 3
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<app-layout-login-cadastro
+  title="Crie sua conta"
+  buttonSubmit="Cadastrar"
+  checkbox="Eu Aceito os Termos e condições"
+  (submit)="onSubmit()"
+>
+
+  <form [formGroup]="cadastroForm">
+
+    <app-primary-input 
+      formControlName="login"
+      label="Login"
+      inputName="login"
+      type="text"
+    ></app-primary-input>
+
+    <app-primary-input 
+      formControlName="senha"
+      label="Senha"
+      inputName="senha"
+      type="password"
+    ></app-primary-input>
+
+    <app-primary-input 
+      formControlName="confirmaSenha"
+      label="Confirme a senha"
+      inputName="confirmaSenha"
+      type="password"
+    ></app-primary-input>
+
+    <p *ngIf="errorMsg" class="erro">{{ errorMsg }}</p>
+
+  </form>
+
+</app-layout-login-cadastro>

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, effect, Input } from '@angular/core';
 import { RouterLink } from "@angular/router";
+import { Conta, ContaService } from '../../services/conta-service';
 
 @Component({
   selector: 'app-layout-conta',
@@ -16,6 +17,21 @@ export class LayoutConta {
   @Input() layoutClass: string = '';
   @Input() headerClass: string = '';
   @Input() mainClass: string = '';
+  @Input() buttonClass: string = '';
 
+  nomeUsuario: string = 'Usuário';
 
+  constructor(private contaService: ContaService) {
+    // Atualiza o nome sempre que o Signal muda
+    effect(() => {
+      const usuario: Conta | null = this.contaService.usuarioLogado();
+      this.nomeUsuario = usuario ? usuario.login : 'Usuário';
+    });
+  }
 }
+  
+  
+
+
+
+

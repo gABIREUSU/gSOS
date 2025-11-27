@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { LayoutConta } from '../../components/layout-conta/layout-conta';
 import {RouterLink } from '@angular/router';
 
+
 @Component({
   selector: 'app-conta',
   standalone: true,
@@ -10,4 +11,6 @@ import {RouterLink } from '@angular/router';
   styleUrls: ['./conta.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class Conta {}
+export class Conta {
+  
+}

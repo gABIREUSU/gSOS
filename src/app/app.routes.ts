@@ -1,12 +1,18 @@
 import { Routes } from '@angular/router';
 import { Conta } from './pages/conta/conta';
 import { CadastroPc } from './pages/cadastro-pc/cadastro-pc';
-import { CadastroInput } from './components/cadastro-input/cadastro-input';
+import { Login } from './pages/login/login';
+import { CadastroConta } from './pages/cadastro-conta/cadastro-conta';
+import { Home } from './pages/home/home';
 
 export const routes: Routes = [
     {path: 'conta', component: Conta},
     {path: 'cadastro-pc', component: CadastroPc},
-    {path: 'cadastro-input', component: CadastroInput},
+    {path: 'login', component: Login},
+    {path: 'cadastro-conta', component: CadastroConta},
+    { path: '', component: Home}
+
+
     
 
 

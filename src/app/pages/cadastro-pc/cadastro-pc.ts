@@ -12,7 +12,7 @@ import { CadastroInput } from '../../components/cadastro-input/cadastro-input';
   styleUrl: './cadastro-pc.css',
 })
 export class CadastroPc {
-  CadastroForm: FormGroup;
+  CadastroForm!: FormGroup;
  
   constructor() {
     this.CadastroForm = new FormGroup({
