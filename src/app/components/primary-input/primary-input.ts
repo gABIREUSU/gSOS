@@ -31,7 +31,7 @@ export class PrimaryInput implements ControlValueAccessor {
   onInput(event: Event) {
     const value = (event.target as HTMLInputElement).value;
     this.value = value;
-    this.onChange(value);  // <-- corrigido
+    this.onChange(value);  
   }
 
   writeValue(value: any): void {
@@ -39,7 +39,7 @@ export class PrimaryInput implements ControlValueAccessor {
   }
 
   registerOnChange(fn: any): void {
-    this.onChange = fn;    // <-- corrigido
+    this.onChange = fn;    
   }
 
   registerOnTouched(fn: any): void {

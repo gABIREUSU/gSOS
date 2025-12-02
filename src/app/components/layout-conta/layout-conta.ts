@@ -22,15 +22,15 @@ export class LayoutConta {
   nomeUsuario: string = 'Usuário';
 
   constructor(private contaService: ContaService) {
-    // Atualiza o nome sempre que o Signal muda
+    
     effect(() => {
       const usuario: Conta | null = this.contaService.usuarioLogado();
       this.nomeUsuario = usuario ? usuario.login : 'Usuário';
     });
   }
 }
-  
-  
+
+
 
 
 

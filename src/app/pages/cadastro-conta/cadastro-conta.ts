@@ -40,7 +40,7 @@ export class CadastroConta {
     this.contaService.cadastrar({ login, senha }).subscribe({
       next: user => {
         console.log("Conta criada com sucesso:", user);
-        this.router.navigate(['/login']); // redireciona para login
+        this.router.navigate(['/login']); 
       },
       error: err => {
         this.errorMsg = err.message;

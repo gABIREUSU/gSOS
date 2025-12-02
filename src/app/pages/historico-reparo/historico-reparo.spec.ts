@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CadastroInput } from './cadastro-input';
+import { HistoricoReparo } from './historico-reparo';
 
-describe('CadastroInput', () => {
-  let component: CadastroInput;
-  let fixture: ComponentFixture<CadastroInput>;
+describe('HistoricoReparo', () => {
+  let component: HistoricoReparo;
+  let fixture: ComponentFixture<HistoricoReparo>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CadastroInput]
+      imports: [HistoricoReparo]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CadastroInput);
+    fixture = TestBed.createComponent(HistoricoReparo);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

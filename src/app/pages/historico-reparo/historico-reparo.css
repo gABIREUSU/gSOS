@@ -1,0 +1,22 @@
+.os-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.os-card {
+    background: #e5e5e5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #4ab8ff;
+}
+
+p {
+    font-family: sans-serif;
+}

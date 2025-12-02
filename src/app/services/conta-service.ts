@@ -14,7 +14,7 @@ export class ContaService {
 
   private apiURL = "http://localhost:3000/contas";
 
-  // Signal do usuário logado
+  
   usuarioLogado = signal<Conta | null>(null);
 
   constructor(private http: HttpClient) {
@@ -34,10 +34,10 @@ export class ContaService {
 
         const user = contas[0];
 
-        // salva no signal
+        
         this.usuarioLogado.set(user);
 
-        // salva no localStorage
+        
         localStorage.setItem("usuario", JSON.stringify(user));
 
         return user;
@@ -47,12 +47,6 @@ export class ContaService {
         return throwError(() => err);
       })
     );
-  }
-
-  // ================ LOGOUT ================
-  logout() {
-    localStorage.removeItem("usuario");
-    this.usuarioLogado.set(null);
   }
 
   // ============ GET DO USUÁRIO LOGADO ============

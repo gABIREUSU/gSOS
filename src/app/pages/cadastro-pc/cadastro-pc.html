@@ -1,16 +1,33 @@
 <app-layout-conta
     title="Conta" 
     title2="Meus PCs"
-    PrimaryBtnText="Minhas OS"
     SecondBtnText="Meus PCs">
-    <form [formGroup]="CadastroForm">
+
+    <form [formGroup]="CadastroForm" (ngSubmit)="salvarPc()">
         <h2>Cadastrar Computador</h2>
-        <P>Nome :</P>
-        <app-cadastro-input></app-cadastro-input>
-        <P>Marca :</P>
-        <app-cadastro-input></app-cadastro-input>
-        <P>Modelo :</P>
-        <app-cadastro-input></app-cadastro-input>
-        <button>Salvar Pc</button>
+
+        <app-primary-input 
+            label="Nome"
+            inputName="nome"
+            type="text"
+            formControlName="nome">
+        </app-primary-input>
+
+        <app-primary-input 
+            label="Marca"
+            inputName="marca"
+            type="text"
+            formControlName="marca">
+        </app-primary-input>
+
+        <app-primary-input 
+            label="Modelo"
+            inputName="modelo"
+            type="text"
+            formControlName="modelo">
+        </app-primary-input>
+
+        <button type="submit">Salvar PC</button>
     </form>
+
 </app-layout-conta>

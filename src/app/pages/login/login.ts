@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
-  imports: [LayoutLoginCadastro, ReactiveFormsModule, PrimaryInput,CommonModule],
+  imports: [LayoutLoginCadastro, ReactiveFormsModule, PrimaryInput, CommonModule],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
@@ -27,7 +27,6 @@ export class Login {
   }
 
   onSubmit() {
-     console.log("SUBMIT DISPARADO");
 
     if (this.loginForm.invalid) {
       this.loginForm.markAllAsTouched();
