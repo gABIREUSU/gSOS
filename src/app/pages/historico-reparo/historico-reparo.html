@@ -1,0 +1,15 @@
+<h1>Histórico de Reparos</h1>
+
+<div class="os-container">
+    <div class="os-card" *ngFor="let os of osList">
+
+        <p><strong>Descrição:</strong> {{ os.descricao }}</p>
+        <p><strong>Status:</strong> {{ os.status }}</p>
+        <p><strong>Data:</strong> {{ os.data }}</p>
+        <p><strong>Preço:</strong> R$ {{ os.preco }}</p>
+
+    </div>
+    <div *ngIf="osList.length === 0">
+        <p>Nenhum reparo registrado ainda.</p>
+    </div>
+</div>

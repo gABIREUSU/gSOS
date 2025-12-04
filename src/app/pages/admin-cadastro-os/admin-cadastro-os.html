@@ -1,0 +1,36 @@
+<app-admin-layout-conta
+title="AdminConta" 
+title2="Lista de OS" 
+SecondBtnText="Criar OS"
+layoutClass="layout-conta" 
+headerClass="header-conta" 
+mainClass="main-conta">
+
+    <form [formGroup]="CadastroForm" (ngSubmit)="cadastrarOS()">
+        <h2>Cadastrar OS</h2>
+
+        <app-primary-input 
+            label="Nome"
+            inputName="nome"
+            type="text"
+            formControlName="nome">
+        </app-primary-input>
+
+        <app-primary-input 
+            label="Marca"
+            inputName="marca"
+            type="text"
+            formControlName="marca">
+        </app-primary-input>
+
+        <app-primary-input 
+            label="Modelo"
+            inputName="modelo"
+            type="text"
+            formControlName="modelo">
+        </app-primary-input>
+
+        <button type="submit">Salvar Os</button>
+    </form>
+
+</app-admin-layout-conta>

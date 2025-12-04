@@ -1,0 +1,28 @@
+<app-layout-login-cadastro
+  title="Faça login na sua conta"
+  buttonSubmit="Login"
+  checkbox="Lembrar Login"
+  (submit)="onSubmit()"
+>
+
+<form [formGroup]="loginForm">
+
+    <app-primary-input 
+        formControlName="login"
+        label="Login"
+        inputName="login"
+        type="text"
+    ></app-primary-input>
+
+    <app-primary-input 
+        formControlName="senha"
+        label="Senha"
+        inputName="senha"
+        type="password"
+    ></app-primary-input>
+
+    <p *ngIf="errorMsg" class="erro">{{ errorMsg }}</p>
+
+</form>
+
+</app-layout-login-cadastro>

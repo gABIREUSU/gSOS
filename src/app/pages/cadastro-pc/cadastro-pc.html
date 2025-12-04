@@ -1,0 +1,26 @@
+<app-layout-conta
+    title="Conta" 
+    title2="Meus PCs"
+    SecondBtnText="Meus PCs">
+
+    <form [formGroup]="CadastroForm" (ngSubmit)="salvarPc()">
+        <h2>Cadastrar Computador</h2>
+
+        <app-primary-input 
+            label="Marca"
+            inputName="marca"
+            type="text"
+            formControlName="marca">
+        </app-primary-input>
+
+        <app-primary-input 
+            label="Modelo"
+            inputName="modelo"
+            type="text"
+            formControlName="modelo">
+        </app-primary-input>
+
+        <button type="submit">Salvar PC</button>
+    </form>
+
+</app-layout-conta>

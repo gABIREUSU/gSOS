@@ -1,0 +1,12 @@
+O que falta
+
+tela admin consulta os
+
+	criar botão para alterar as informações
+
+
+Tela admin cadastro os
+
+	Arrumar o HTML
+	Fazer o service funcionar e arrumar um jeito de linkar o pc com a OS
+	

@@ -1,0 +1,27 @@
+<app-admin-layout-conta title="AdminConta" 
+title2="Lista de OS" 
+SecondBtnText="Criar OS"
+layoutClass="layout-conta" 
+headerClass="header-conta" 
+mainClass="main-conta">
+
+    <!-- Card 1 -->
+    <div class="os-cards-container">
+
+      <div class="os-card" *ngFor="let os of os">
+        <img class="pc-img" src="assets/svg/PC.svg" />
+        <h3></h3>
+        <p>Descriçao: {{ os.descricao }}</p>
+        <p>Preço: {{ os.preco }}</p>
+        <p>Data: {{ os.data }}</p>
+        <p>Status: {{ os.status }}</p>
+        
+
+                <div class="card-buttons">
+          <button class="btn-excluir" (click)="deleteOs(os.id)">Excluir</button>
+
+      </div>
+      </div>
+
+    </div>
+</app-admin-layout-conta>

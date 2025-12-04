@@ -1,0 +1,109 @@
+.main-conta {
+  background-color: #f5f5f5;
+}
+
+.pc-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* sempre 3 colunas */
+  gap: 25px;
+  margin-top: 20px;
+}
+
+
+.pc-card {
+  width: 230px;
+  background: #e5e5e5;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pc-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.pc-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.pc-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.btn-reparo {
+  width: 100%;
+  padding: 8px;
+  background: #4ab8ff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-reparo:hover {
+  opacity: .8;
+}
+
+/* Card de adicionar PC */
+.add-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  font-size: 200px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.btn-add {
+  width: 100%;
+  padding: 8px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 40px;
+
+}
+
+.btn-add:hover {
+  opacity: .8;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn-excluir {
+  flex: 1;
+  padding: 5px;
+  background: #ff3b3b;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-excluir:hover {
+  opacity: 0.8;
+}

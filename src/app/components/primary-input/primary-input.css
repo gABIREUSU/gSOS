@@ -1,0 +1,11 @@
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.1);
+  
+}
+

@@ -1,0 +1,34 @@
+<app-layout-conta title="Conta" 
+title2="Meus PCs" 
+SecondBtnText="Meus PCs"
+layoutClass="layout-conta" 
+headerClass="header-conta" 
+mainClass="main-conta">
+
+    <!-- Card 1 -->
+    <div class="pc-cards-container">
+
+      <div class="pc-card" *ngFor="let pc of pcs">
+        <img class="pc-img" src="assets/svg/PC.svg" />
+        <h3></h3>
+        <p>Marca {{ pc.marca }} - Modelo {{ pc.modelo }}</p>
+
+        <div class="card-buttons">
+          <button class="btn-excluir" (click)="excluirPc(pc.id)">Excluir</button>
+          <button class="btn-reparo" routerLink="/historico-reparo/{{ pc.idpc }}">
+           Histórico de reparos</button>
+
+        </div>
+      </div>
+
+
+      <!-- Card Cadastrar -->
+      <div class="pc-card add-card">
+        <div class="plus">+</div>
+        <button routerLink="/cadastro-pc" class="btn-add">
+          Cadastrar PC
+        </button>
+      </div>
+
+    </div>
+</app-layout-conta>
